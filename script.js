@@ -111,9 +111,9 @@ document.getElementById('call-btnN').addEventListener('click', function() {
 
   if (coinCount >= 20) {
     coinNumberEl.innerText = coinCount - 20;
-    alert("Calling emergency service 999.....");
+    alert("📞 Calling National Emergency Service 999.....");
   } else {
-    alert("Not sufficient coin");
+    alert("❌Not sufficient coin");
   }
 });
 
@@ -124,9 +124,9 @@ document.getElementById('call-btnP').addEventListener('click', function() {
 
   if (coinCount >= 20) {
     coinNumberEl.innerText = coinCount - 20;
-    alert("Calling emergency service 999.....");
+    alert("📞 Calling Police 999.....");
   } else {
-    alert("Not sufficient coin");
+    alert("❌Not sufficient coin");
   }
 });
 
@@ -137,9 +137,9 @@ document.getElementById('call-btnF').addEventListener('click', function() {
 
   if (coinCount >= 20) {
     coinNumberEl.innerText = coinCount - 20;
-    alert("Calling emergency service 999.....");
+    alert("📞 Calling Fire Service 999.....");
   } else {
-    alert("Not sufficient coin");
+    alert("❌Not sufficient coin");
   }
 });
 
@@ -151,9 +151,9 @@ document.getElementById('call-btnA').addEventListener('click', function() {
 
   if (coinCount >= 20) {
     coinNumberEl.innerText = coinCount - 20;
-    alert("Calling emergency service 999.....");
+    alert("📞 Calling Ambulance Service 1994-999999.....");
   } else {
-    alert("Not sufficient coin");
+    alert("❌Not sufficient coin");
   }
 });
 
@@ -164,9 +164,9 @@ document.getElementById('call-btnW').addEventListener('click', function() {
 
   if (coinCount >= 20) {
     coinNumberEl.innerText = coinCount - 20;
-    alert("Calling emergency service 999.....");
+    alert("📞 Calling Women & Child 109.....");
   } else {
-    alert("Not sufficient coin");
+    alert("❌ Not sufficient coin");
   }
 });
 
@@ -177,9 +177,9 @@ document.getElementById('call-btnC').addEventListener('click', function() {
 
   if (coinCount >= 20) {
     coinNumberEl.innerText = coinCount - 20;
-    alert("Calling emergency service 999.....");
+    alert("📞 Calling Anti-Corruption 106.....");
   } else {
-    alert("Not sufficient coin");
+    alert("❌ Not sufficient coin");
   }
 });
 
@@ -191,9 +191,9 @@ document.getElementById('call-btnE').addEventListener('click', function() {
 
   if (coinCount >= 20) {
     coinNumberEl.innerText = coinCount - 20;
-    alert("Calling emergency service 999.....");
+    alert("📞 Calling Electricity 16216.....");
   } else {
-    alert("Not sufficient coin");
+    alert("❌Not sufficient coin");
   }
 });
 
@@ -204,9 +204,9 @@ document.getElementById('call-btnB').addEventListener('click', function() {
 
   if (coinCount >= 20) {
     coinNumberEl.innerText = coinCount - 20;
-    alert("Calling emergency service 999.....");
+    alert("📞 Calling Brac 16445.....");
   } else {
-    alert("Not sufficient coin");
+    alert("❌Not sufficient coin");
   }
 });
 
@@ -217,9 +217,9 @@ document.getElementById('call-btnR').addEventListener('click', function() {
 
   if (coinCount >= 20) {
     coinNumberEl.innerText = coinCount - 20;
-    alert("Calling emergency service 999.....");
+    alert("📞 Calling Bangladesh Railway 163.....");
   } else {
-    alert("Not sufficient coin");
+    alert("❌ Not sufficient coin");
   }
 });
 
@@ -248,7 +248,7 @@ function formatTime(date) {
     minute: '2-digit',
     second: '2-digit',
     hour12: true,
-    timeZoneName: 'short'
+    
   });
 }
 
@@ -277,12 +277,12 @@ callButtons.forEach(({id, label, number}) => {
 
 if (clearHistoryBtn) {
   clearHistoryBtn.addEventListener('click', () => {
-    historyList.innerHTML = '<li class="text-center italic text-gray-400">No calls made yet.</li>';
+    historyList.innerHTML = '';
   });
 }
 
 if (historyList && historyList.children.length === 0) {
-  historyList.innerHTML = '<li class="text-center italic text-gray-400">No calls made yet.</li>';
+  historyList.innerHTML = '';
 }
 
 
